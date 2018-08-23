@@ -1,0 +1,55 @@
+        nav {
+            background: #161717;
+        }
+        
+        nav a:link {
+            text-decoration: none;
+        }
+        
+        nav ul li a {
+            margin-left: 2em;
+        }
+        
+        nav ul li a:hover {
+            border-bottom: 2px solid #C31326;
+            padding-bottom: 3px;
+        }
+        
+        .jumbotron {
+            background-image: url(../assets/images/pink-floyd.jpg);
+            height: 750px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-width: 100%;
+            opacity: 0.8;
+            background-position: center 0;
+            padding: 80px;
+        }
+        
+        .tittle {
+            border-bottom: 2px solid #C31326;
+            width: 20%;
+        }
+        
+        .progress-bar {
+            background: #C31326;
+        }
+        
+        .bar i {
+            font-size: 30px;
+        }
+        
+        .code {
+            font-size: 40px;
+            color: #C31326;
+        }
+        
+        .contact i {
+            font-size: 30px;
+        }
+        
+        @media (max-width: 640px) {
+            .tittle {
+                width: 50%;
+            }
+        }
