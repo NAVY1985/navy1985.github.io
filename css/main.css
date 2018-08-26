@@ -1,55 +1,232 @@
-        nav {
-            background: #161717;
-        }
-        
-        nav a:link {
-            text-decoration: none;
-        }
-        
-        nav ul li a {
-            margin-left: 2em;
-        }
-        
-        nav ul li a:hover {
-            border-bottom: 2px solid #C31326;
-            padding-bottom: 3px;
-        }
-        
-        .jumbotron {
-            background-image: url(../assets/images/pink-floyd.jpg);
-            height: 750px;
-            background-repeat: no-repeat;
-            background-size: cover;
-            max-width: 100%;
-            opacity: 0.8;
-            background-position: center 0;
-            padding: 80px;
-        }
-        
-        .tittle {
-            border-bottom: 2px solid #C31326;
-            width: 20%;
-        }
-        
-        .progress-bar {
-            background: #C31326;
-        }
-        
-        .bar i {
-            font-size: 30px;
-        }
-        
-        .code {
-            font-size: 40px;
-            color: #C31326;
-        }
-        
-        .contact i {
-            font-size: 30px;
-        }
-        
-        @media (max-width: 640px) {
-            .tittle {
-                width: 50%;
-            }
-        }
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav {
+    background: #161717;
+}
+
+nav a:link {
+    text-decoration: none;
+}
+
+nav ul li a {
+    margin-left: 2em;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #C31326;
+    padding-bottom: 3px;
+    overflow: hidden;
+}
+
+.code {
+    font-size: 30px;
+    color: #C31326;
+}
+
+.jumbotron {
+    background-image: url(../assets/images/dark.png);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    background-position: center 0;
+    padding: 80px;
+    overflow: hidden;
+}
+
+
+/* --- PORTAFOLIO --- */
+
+.portafolio {
+    padding: 0 20px;
+}
+
+.portafolio .titulo {
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    border-top: 2px solid #C31326;
+    font-size: 40px;
+}
+
+.portafolio .galeria .contenedor-imagen {
+    margin-bottom: 40px;
+    max-height: 180px;
+    overflow: hidden;
+}
+
+.portafolio .galeria .contenedor-imagen a {
+    display: inline-block;
+}
+
+.portafolio .galeria .contenedor-imagen:hover img {
+    opacity: .3;
+}
+
+.portafolio .modal-dialog {
+    margin: 0px auto;
+    height: 100%;
+    max-width: 1000px;
+}
+
+.portafolio .modal-content {
+    width: auto;
+}
+
+
+/* --- ACERCA DE --- */
+
+.acerca-de {
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.acerca-de .foto {
+    text-align: center;
+}
+
+.acerca-de .foto img {
+    margin-bottom: 30px;
+}
+
+.acerca-de .foto .nombre {
+    color: #545454;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.acerca-de .info .titulo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.acerca-de .info .resumen {
+    letter-spacing: 1px;
+}
+
+.acerca-de .info .label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.acerca-de .info .progress {
+    background: #161717;
+    border-radius: 0;
+    margin-bottom: 15px;
+    height: 25px;
+}
+
+.acerca-de .info .progress .progress-bar {
+    background: #C31326;
+    line-height: 25px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+
+/* --- CONTACTO --- */
+
+.contacto {
+    padding: 40px 0;
+    border-top: 1px solid #cbcbcb;
+    border-bottom: 1px solid #cbcbcb;
+    margin-bottom: 40px;
+}
+
+.contacto .titulo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+
+/* --- FOOTER --- */
+
+.redes-sociales {
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+
+footer .redes-sociales .red p span i {
+    font-size: 30px;
+}
+
+
+/* --- MEDIAQUERIES ---  */
+
+
+/* Dispositivo xl */
+
+
+/* @media screen and (max-width:1199px) {} */
+
+
+/* Dispositivo lg */
+
+@media screen and (max-width:991px) {
+    .logo {
+        height: 76px;
+    }
+    .menu {
+        min-height: 76px;
+    }
+    .menu a {
+        width: 100%;
+    }
+    .menu a div {
+        width: 100%;
+    }
+    .portafolio .galeria .contenedor-imagen:nth-child(1) {
+        order: 1;
+    }
+    .portafolio .galeria .contenedor-imagen:nth-child(2) {
+        order: 3;
+    }
+    .portafolio .galeria .contenedor-imagen:nth-child(3) {
+        order: 4;
+    }
+    .portafolio .galeria .contenedor-imagen:nth-child(4) {
+        order: 2;
+    }
+    .modal .modal-dialog {
+        width: 90%;
+    }
+    .modal .modal-dialog .modal-content img {
+        width: 100%;
+    }
+    .contacto p {
+        font-size: 18px;
+    }
+    footer .redes-sociales .red p {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+}
+
+
+/* Dispositivo md
+
+@media screen and (max-width:767px) {}
+
+
+/* Dispositivo sm */
+
+
+/* @media screen and (max-width:575px) {
+    header {
+        margin-top: 0;
+    }
+    header .logo h2,
+    header .logo p {
+        font-size: 12px;
+    }
+} */
