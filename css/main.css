@@ -15,31 +15,224 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    border-bottom: 2px solid #C31326;
+    border-bottom: 2px solid #840037;
     padding-bottom: 3px;
     overflow: hidden;
 }
 
 .code {
     font-size: 30px;
-    color: #C31326;
+    color: #840037;
 }
 
 .jumbotron {
-    background-image: url(../assets/images/dark.png);
-    height: 700px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-image: url(../assets/images/dark.png); */
+    background: #161717;
+    height: 750px;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
     max-width: 100%;
-    background-position: center 0;
+    /* background-position: center 0;
     padding: 80px;
-    overflow: hidden;
+    overflow: hidden; */
+    padding-top: 100px;
+}
+
+svg {
+    display: block;
+    font: 8.5em 'Montserrat';
+    max-width: 100%;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+    stroke: #4D163D;
+    animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+    stroke: #840037;
+    animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+    stroke: #BD0034;
+    animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+    stroke: #BD0034;
+    animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+    stroke: #FDB731;
+    animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+    100% {
+        stroke-dashoffset: -35%;
+    }
 }
 
 
 /* --- PORTAFOLIO --- */
 
 .portafolio {
+    padding: 0 20px;
+}
+
+.portafolio .titulo {
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    border-top: 2px solid #840037;
+    font-size: 40px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+figure.snip0015 {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #fff;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 220px;
+    max-width: 400px;
+    max-height: 220px;
+    width: 100%;
+    background: #000000;
+    text-align: center;
+}
+
+figure.snip0015 * {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+figure.snip0015 img {
+    opacity: 1;
+    width: 100%;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;
+}
+
+figure.snip0015 figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2.5em 2.5em;
+    width: 100%;
+    height: 100%;
+}
+
+figure.snip0015 figcaption::before {
+    position: absolute;
+    top: 5%;
+    right: 30px;
+    bottom: 5%;
+    left: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    content: '';
+    opacity: 0;
+    background-color: #ffffff;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+
+figure.snip0015 h5,
+figure.snip0015 p,
+figure.snip0015 a {
+    margin: 0 0 5px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, -webkit-transform 0.35s, -moz-transform 0.35s, -o-transform 0.35s, transform 0.35s;
+}
+
+figure.snip0015 h5 {
+    word-spacing: -0.15em;
+    font-weight: 200;
+    text-transform: uppercase;
+    -webkit-transform: translate3d(0%, 50%, 0);
+    transform: translate3d(0%, 50%, 0);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+figure.snip0015 h5 span {
+    font-weight: 700;
+}
+
+figure.snip0015 p {
+    font-weight: 200;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+figure.snip0015 a {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 3px;
+    /* // position: absolute; */
+    color: #ffffff;
+    background: #BD0034;
+    padding: .3em;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+figure.snip0015:hover img {
+    opacity: 0.1;
+}
+
+figure.snip0015:hover figcaption h5 {
+    opacity: 1;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+}
+
+figure.snip0015:hover figcaption p {
+    opacity: 0.9;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+
+figure.snip0015:hover figcaption a {
+    opacity: 0.9;
+    -webkit-transition-delay: 0.6s;
+    transition-delay: 0.6s;
+}
+
+figure.snip0015:hover figcaption::before {
+    background: rgba(255, 255, 255, 0);
+    top: 25px;
+    bottom: 25px;
+    opacity: 0.5;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+
+/* .portafolio {
     padding: 0 20px;
 }
 
@@ -60,13 +253,15 @@ nav ul li a:hover {
 
 .portafolio .galeria .contenedor-imagen a {
     display: inline-block;
-}
+} */
 
-.portafolio .galeria .contenedor-imagen:hover img {
+
+/* .portafolio .galeria .contenedor-imagen:hover img {
     opacity: .3;
-}
+} */
 
-.portafolio .modal-dialog {
+
+/* .portafolio .modal-dialog {
     margin: 0px auto;
     height: 100%;
     max-width: 1000px;
@@ -74,7 +269,7 @@ nav ul li a:hover {
 
 .portafolio .modal-content {
     width: auto;
-}
+} */
 
 
 /* --- ACERCA DE --- */
@@ -124,7 +319,7 @@ nav ul li a:hover {
 }
 
 .acerca-de .info .progress .progress-bar {
-    background: #C31326;
+    background: #840037;
     line-height: 25px;
     text-align: left;
     padding-left: 20px;
@@ -158,6 +353,7 @@ nav ul li a:hover {
 
 footer .redes-sociales .red p span i {
     font-size: 30px;
+    color: #FDB731;
 }
 
 
@@ -173,7 +369,7 @@ footer .redes-sociales .red p span i {
 /* Dispositivo lg */
 
 @media screen and (max-width:991px) {
-    .logo {
+    /* .logo {
         height: 76px;
     }
     .menu {
@@ -202,6 +398,15 @@ footer .redes-sociales .red p span i {
     }
     .modal .modal-dialog .modal-content img {
         width: 100%;
+    } */
+    .jumbotron {
+        background: #161717;
+        height: 500px;
+        max-width: 100%;
+        padding: 50px;
+    }
+    .text-center {
+        font-size: 25px;
     }
     .contacto p {
         font-size: 18px;

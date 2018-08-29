@@ -25,3 +25,18 @@
 //         $(this).css('animation-delay', '-' + i + '30ms');
 //     });
 // });
+
+// $(document).ready(function() {
+//     var $magic = $(".magic"),
+//         magicWHalf = $magic.width() / 2;
+//     $(document).on("mousemove", function(e) {
+//         $magic.css({ "left": e.pageX - magicWHalf, "top": e.pageY - magicWHalf });
+//     });
+// });
+
+/* Demo purposes only */
+// $(".hover").mouseleave(
+//     function() {
+//         $(this).removeClass("hover");
+//     }
+// );
