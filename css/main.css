@@ -175,6 +175,7 @@
         font-weight: 300;
         font-size: 40px;
         margin-bottom: 20px;
+        margin-top: 30px;
     }
     
     .acerca-de .info .resumen {
@@ -224,7 +225,7 @@
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
         font-size: 40px;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
         text-align: center;
     }
     /* --- FOOTER --- */
