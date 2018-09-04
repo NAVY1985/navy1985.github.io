@@ -12,6 +12,10 @@
         transition: margin 0.5s ease-out;
     }
     
+    .nav-item a {
+        font-size: 16px;
+    }
+    
     .nav-item:hover {
         margin-top: 1px;
     }
@@ -134,8 +138,8 @@
     }
     
     .imagen {
-        // box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-        // transition: all 0.5s ease-out;
+        /* // box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+        // transition: all 0.5s ease-out; */
         transition: all 0.5s ease;
         -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0, 0, 0, 0.8)));
     }
@@ -177,27 +181,35 @@
         letter-spacing: 1px;
     }
     
-    .acerca-de .info .label {
-        font-size: 18px;
-        font-weight: 600;
-        margin-bottom: 10px;
-    }
-    
-    .progress {
-        border-radius: 0;
-        margin-bottom: 15px;
-        height: 25px;
-    }
-    
-    .progress .progress-bar {
-        background: #BD0034;
-        line-height: 25px;
-        text-align: left;
-        padding-left: 20px;
-    }
-    
+    // .acerca-de .info .label {
+    //     font-size: 18px;
+    //     font-weight: 600;
+    //     margin-bottom: 10px;
+    // }
+    // .progress {
+    //     border-radius: 0;
+    //     margin-bottom: 15px;
+    //     height: 25px;
+    // }
+    // .progress .progress-bar {
+    //     background: #BD0034;
+    //     line-height: 25px;
+    //     text-align: left;
+    //     padding-left: 20px;
+    // }
     .bar i {
-        font-size: 30px;
+        font-size: 70px;
+        color: #4D163D;
+        transition-property: opacity;
+        transition-duration: 500ms;
+    }
+    
+    .bar:hover i {
+        opacity: 0.2;
+    }
+    
+    .bar i:hover {
+        opacity: 1;
     }
     /* --- CONTACT --- */
     
@@ -238,7 +250,7 @@
     .up {
         display: none;
         padding: 15px;
-        background: #FDB731;
+        background: #BD0034;
         font-size: 20px;
         color: white;
         cursor: pointer;
@@ -275,5 +287,8 @@
             left: 20px;
             padding: 10px;
             border-radius: 20px;
+        }
+        .redes {
+            margin-top: 20px;
         }
     }
