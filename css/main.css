@@ -1,295 +1,280 @@
-    body {
-        font-family: 'Open Sans', sans-serif;
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav a:link {
+    text-decoration: none;
+}
+
+.nav-item {
+    float: left;
+    margin: 10px;
+    transition: margin 0.5s ease-out;
+}
+
+.nav-item a {
+    font-size: 16px;
+}
+
+.nav-item:hover {
+    margin-top: 1px;
+}
+
+.code {
+    font-size: 30px;
+    color: #F4D3ED;
+}
+
+.bg-inverse {
+    background-image: linear-gradient(#840037, black);
+}
+
+
+/* --- header --- */
+
+.back {
+    position: relative;
+    height: 750px;
+    max-width: 100%;
+    background-image: linear-gradient(#840037, black);
+    // background-image: url(../assets/images/fondonavy-osc.JPG);
+    background-position: center;
+    overflow: hidden;
+    // margin-top: 56px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 0;
+}
+
+.nombre {
+    display: block;
+    font: 8em 'Montserrat';
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+    height: 250px;
+    margin-top: 120px;
+}
+
+h1 {
+    color: #F4D3ED;
+}
+
+svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    max-width: 100%;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+    stroke: #4D163D;
+    animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+    stroke: #840037;
+    animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+    stroke: #BD0034;
+    animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+    stroke: #BD0034;
+    animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+    stroke: #FDB731;
+    animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+    100% {
+        stroke-dashoffset: -35%;
     }
-    
-    nav a:link {
-        text-decoration: none;
-    }
-    
-    .nav-item {
-        float: left;
-        margin: 10px;
-        transition: margin 0.5s ease-out;
-    }
-    
-    .nav-item a {
-        font-size: 16px;
-    }
-    
-    .nav-item:hover {
-        margin-top: 1px;
-    }
-    
-    .code {
-        font-size: 30px;
-        color: #F4D3ED;
-    }
-    
-    .bg-inverse {
-        background-image: linear-gradient(#840037, black);
-    }
-    /* --- header --- */
-    
+}
+
+
+/* --- PROJECTS --- */
+
+.portafolio {
+    padding: 0 20px;
+}
+
+.portafolio .titulo {
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.projects a {
+    color: #ffffff;
+    background: #BD0034;
+    padding: .6em;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.projects a:active {
+    background: #FDB731;
+}
+
+.projects a:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.8);
+    transition: all 0.2s ease;
+}
+
+.imagen {
+    /* // box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    // transition: all 0.5s ease-out; */
+    transition: all 0.5s ease;
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0, 0, 0, 0.8)));
+}
+
+.imagen:hover {
+    transform: rotate(-7deg);
+}
+
+
+/* --- ABOUT ME --- */
+
+.acerca-de {
+    padding: 30px;
+    margin-bottom: 40px;
+    border-top: 1px solid #cbcbcb;
+}
+
+.acerca-de .foto {
+    text-align: center;
+}
+
+.acerca-de .foto img {
+    margin-bottom: 30px;
+}
+
+.acerca-de .foto .name {
+    color: #545454;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.acerca-de .info .titulo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.acerca-de .info .resumen {
+    letter-spacing: 1px;
+}
+
+.bar i {
+    font-size: 70px;
+    color: #4D163D;
+    transition-property: opacity;
+    transition-duration: 500ms;
+}
+
+.bar:hover i {
+    opacity: 0.2;
+}
+
+.bar i:hover {
+    opacity: 1;
+}
+
+
+/* --- CONTACT --- */
+
+.contacto {
+    padding: 40px 0;
+    border-top: 1px solid #cbcbcb;
+    border-bottom: 1px solid #cbcbcb;
+    margin-bottom: 40px;
+}
+
+.contacto .titulo {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+/* --- FOOTER --- */
+
+.redes-sociales {
+    padding: 20px 0;
+    margin-bottom: 40px;
+}
+
+footer .redes-sociales .red a span i {
+    font-size: 40px;
+    color: #BD0034;
+}
+
+.up {
+    display: none;
+    padding: 15px;
+    background: #BD0034;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+@media screen and (max-width:991px) {
     .back {
-        position: relative;
-        height: 750px;
+        height: 690px;
         max-width: 100%;
-        background-image: linear-gradient(#840037, black);
-        // background-image: url(../assets/images/fondonavy-osc.JPG);
-        background-position: center;
-        overflow: hidden;
-        // margin-top: 56px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center 0;
     }
-    
     .nombre {
-        display: block;
-        font: 8em 'Montserrat';
-        max-width: 100%;
-        margin: 0 auto;
-        position: relative;
-        height: 250px;
-        margin-top: 120px;
-    }
-    
-    h1 {
-        color: #F4D3ED;
-    }
-    
-    svg {
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 100px;
-        max-width: 100%;
-    }
-    
-    .text-copy {
-        fill: none;
-        stroke: white;
-        stroke-dasharray: 6% 29%;
-        stroke-width: 5px;
-        stroke-dashoffset: 0%;
-        animation: stroke-offset 5.5s infinite linear;
-    }
-    
-    .text-copy:nth-child(1) {
-        stroke: #4D163D;
-        animation-delay: -1;
-    }
-    
-    .text-copy:nth-child(2) {
-        stroke: #840037;
-        animation-delay: -2s;
-    }
-    
-    .text-copy:nth-child(3) {
-        stroke: #BD0034;
-        animation-delay: -3s;
-    }
-    
-    .text-copy:nth-child(4) {
-        stroke: #BD0034;
-        animation-delay: -4s;
-    }
-    
-    .text-copy:nth-child(5) {
-        stroke: #FDB731;
-        animation-delay: -5s;
-    }
-    
-    @keyframes stroke-offset {
-        100% {
-            stroke-dashoffset: -35%;
-        }
-    }
-    /* --- PROJECTS --- */
-    
-    .portafolio {
-        padding: 0 20px;
-    }
-    
-    .portafolio .titulo {
-        padding: 20px 0;
-        text-align: center;
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 300;
-        font-size: 40px;
-    }
-    
-    .projects a {
-        color: #ffffff;
-        background: #BD0034;
-        padding: .6em;
-        text-decoration: none;
-        border-radius: 4px;
-    }
-    
-    .projects a:active {
-        background: #FDB731;
-    }
-    
-    .projects a:hover {
-        color: rgba(255, 255, 255, 1);
-        box-shadow: 0 6px 20px rgba(255, 0, 0, 0.8);
-        transition: all 0.2s ease;
-    }
-    
-    .imagen {
-        /* // box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-        // transition: all 0.5s ease-out; */
-        transition: all 0.5s ease;
-        -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.7, transparent), to(rgba(0, 0, 0, 0.8)));
-    }
-    
-    .imagen:hover {
-        transform: rotate(-7deg);
-    }
-    /* --- ABOUT ME --- */
-    
-    .acerca-de {
-        padding: 30px;
-        margin-bottom: 40px;
-        border-top: 1px solid #cbcbcb;
-    }
-    
-    .acerca-de .foto {
-        text-align: center;
-    }
-    
-    .acerca-de .foto img {
-        margin-bottom: 30px;
-    }
-    
-    .acerca-de .foto .name {
-        color: #545454;
-        font-weight: 300;
-        font-size: 18px;
-        letter-spacing: 2px;
-    }
-    
-    .acerca-de .info .titulo {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 300;
-        font-size: 40px;
-        margin-bottom: 20px;
-        margin-top: 30px;
-    }
-    
-    .acerca-de .info .resumen {
-        letter-spacing: 1px;
-    }
-    
-    // .acerca-de .info .label {
-    //     font-size: 18px;
-    //     font-weight: 600;
-    //     margin-bottom: 10px;
-    // }
-    // .progress {
-    //     border-radius: 0;
-    //     margin-bottom: 15px;
-    //     height: 25px;
-    // }
-    // .progress .progress-bar {
-    //     background: #BD0034;
-    //     line-height: 25px;
-    //     text-align: left;
-    //     padding-left: 20px;
-    // }
-    .bar i {
-        font-size: 70px;
-        color: #4D163D;
-        transition-property: opacity;
-        transition-duration: 500ms;
-    }
-    
-    .bar:hover i {
-        opacity: 0.2;
-    }
-    
-    .bar i:hover {
-        opacity: 1;
-    }
-    /* --- CONTACT --- */
-    
-    .contacto {
-        padding: 40px 0;
-        border-top: 1px solid #cbcbcb;
-        border-bottom: 1px solid #cbcbcb;
-        margin-bottom: 40px;
-    }
-    
-    .contacto .titulo {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 300;
-        font-size: 40px;
-        margin-bottom: 30px;
-        text-align: center;
-    }
-    /* --- FOOTER --- */
-    
-    .redes-sociales {
-        padding: 40px 0;
-        margin-bottom: 40px;
-    }
-    
-    .redes-sociales a {
-        text-decoration: none;
-    }
-    
-    .redes-sociales a:hover {
-        color: #BD0034;
-    }
-    
-    footer .redes-sociales .red a span i {
-        font-size: 30px;
-        color: #BD0034;
-    }
-    
-    .up {
-        display: none;
+        height: 150px;
         padding: 15px;
-        background: #BD0034;
-        font-size: 20px;
-        color: white;
-        cursor: pointer;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
+        margin-top: 150px;
     }
-    
-    @media screen and (max-width:991px) {
-        .back {
-            height: 690px;
-            max-width: 100%;
-        }
-        .nombre {
-            height: 150px;
-            padding: 15px;
-            margin-top: 150px;
-        }
-        h1 {
-            font-size: 30px;
-        }
-        .projects a {
-            padding: .5em;
-        }
-        .contacto p {
-            font-size: 1em;
-        }
-        footer .redes-sociales .red a {
-            font-size: 1em;
-            margin-top: 20px;
-        }
-        .up {
-            position: relative;
-            left: 20px;
-            padding: 10px;
-            border-radius: 20px;
-        }
-        .redes {
-            margin-top: 20px;
-        }
+    h1 {
+        font-size: 30px;
     }
+    .projects a {
+        padding: .5em;
+    }
+    .contacto p {
+        font-size: 1em;
+    }
+    // footer .redes-sociales .red a {
+    //     font-size: 1em;
+    // }
+    .up {
+        position: relative;
+        left: 20px;
+        padding: 10px;
+        border-radius: 20px;
+    }
+    footer .redes-sociales .red a i {
+        margin-bottom: 50px;
+    }
+}
