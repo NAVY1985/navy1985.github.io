@@ -24,20 +24,10 @@ $(document).ready(function() {
         }
     });
 
-    $("#projects").click(function() {
-        $('html,body').animate({
-            scrollTop: $("#projects1").offset().top
-        }, 2000);
-    });
-    $("#about").click(function() {
-        $('html,body').animate({
-            scrollTop: $("#about1").offset().top
-        }, 2000);
+    $('nav a').click(function(e) {
+        e.preventDefault();
+        $('html, body').stop().animate({ scrollTop: $($(this).attr('href')).offset().top }, 1000);
     });
 
-    $("#contact").click(function() {
-        $('html,body').animate({
-            scrollTop: $("#contact1").offset().top
-        }, 2000);
-    });
+
 });
