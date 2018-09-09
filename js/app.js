@@ -23,4 +23,21 @@ $(document).ready(function() {
             $('#menu').removeClass('bg-inverse');
         }
     });
+
+    $("#projects").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#projects1").offset().top
+        }, 2000);
+    });
+    $("#about").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#about1").offset().top
+        }, 2000);
+    });
+
+    $("#contact").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#contact1").offset().top
+        }, 2000);
+    });
 });
